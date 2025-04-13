@@ -1,0 +1,5552 @@
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VJN",
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53740548015,
+                    12.97034055388
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "MAGR",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.60635056836,
+                    12.97554208403
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "E",
+                "station": "KRAM"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57522329554,
+                    12.96161430002
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Banashankari Nagar Side",
+                "ref": "B",
+                "station": "BSNK",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57377859171,
+                    12.91542754990
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VDSA",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Vidhana Soudha Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59274348482,
+                    12.98013939850
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "station": "NYHM",
+                "railway": "subway_entrance",
+                "name": "Nayandahalli Railway Station Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52491444215,
+                    12.94180954315
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "C",
+                "station": "YPI",
+                "railway": "subway_entrance",
+                "name": "GG Palya Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54148244590,
+                    13.02833346819
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VSWA",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Bangalore University Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58451848149,
+                    12.97485842494
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2",
+                "station": "WHTM"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.75786559880,
+                    12.99516033339
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "PEYA",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53392397821,
+                    13.03267651374
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "KDGD",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.74653340589,
+                    12.98571908972
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "CBPK",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Income Tax Office/HAL"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59795903087,
+                    12.98092742886
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "G",
+                "station": "YPM",
+                "name": "Railway Station Side",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55047187075,
+                    13.02314758569
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51990407571,
+                    13.03959987346
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "ITPL",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "Pattandur Agrahara Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.73787110909,
+                    12.98741771826
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "BRCS",
+                "name": "Railway Station Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56681858420,
+                    12.97607903323
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1",
+                "station": "SSHP"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.72757308460,
+                    12.98163331009
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.72764786944,
+                    12.98086861224
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "E",
+                "railway": "subway_entrance",
+                "name": "Yelachenahalli Side",
+                "station": "PUTH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57007278435,
+                    12.89630087338
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Raghuvanahalli Side",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "VJRH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54492573306,
+                    12.87740544796
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "MYRD",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52968071818,
+                    12.94624037109
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "F",
+                "station": "YPM",
+                "name": "Railway Station Side",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55011245474,
+                    13.02334096391
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "CBPK",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59806616663,
+                    12.98081624137
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "RJNR",
+                "railway": "subway_entrance",
+                "ref": "B",
+                "name": "Ananya Hospital Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55001723498,
+                    13.00010967377
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "DJNR",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53676174998,
+                    12.95249305037
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54934534363,
+                    13.02311557309
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "SVRD",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Isolation Hospital Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.64444239371,
+                    12.98586131595
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "IDN",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.63832054623,
+                    12.97820071864
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.75390535459,
+                    12.98760001655
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "C",
+                "station": "VDSA",
+                "railway": "subway_entrance",
+                "name": "GPO Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59229153261,
+                    12.97902989177
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "KTPO Side",
+                "station": "KDNH",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71568722956,
+                    12.97776486444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JPN",
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57328212524,
+                    12.90699513445
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "SPGD"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57037519872,
+                    12.99077943807
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VJN",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53741620898,
+                    12.97092603905
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "name": "KEB Colony Side",
+                "station": "DKIA",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71128103070,
+                    12.98900547247
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "MDVP",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Mahadevapura Police Station Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.69255786061,
+                    12.99675397241
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "GDCP",
+                "ref": "B",
+                "name": "Garudacharpalya Side",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70372055403,
+                    12.99323094184
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52963177793,
+                    12.86134579712
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JTPM",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.66844748378,
+                    12.99652921145
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "IDN",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.63841681115,
+                    12.97846337428
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "BGUC",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51182793498,
+                    12.93503116212
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "KGWA",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57194160342,
+                    12.97570396473
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KGWA",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "Chikka Lalbagh"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57303595275,
+                    12.97417753984
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bayanapalya Side",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "station": "VJRH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54458710417,
+                    12.87754860544
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VDSA",
+                "ref": "E",
+                "railway": "subway_entrance",
+                "name": "Vikasa Soudha Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59011894330,
+                    12.97763287330
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KRAM",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Kalasipalya (Victoria Hospital) Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57570609316,
+                    12.96185869654
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70862027869,
+                    12.98114174014
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51241937146,
+                    13.04366835346
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58020013437,
+                    12.94657495744
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "CKPE"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57451652944,
+                    12.96740264691
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "MAGR",
+                "ref": "C",
+                "railway": "subway_entrance",
+                "name": "MG Road Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.60669097170,
+                    12.97525962282
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "station": "NGSA",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.50069140852,
+                    13.04787395083
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "APTS"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51199959636,
+                    13.04333781743
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "SSFY"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55390643537,
+                    13.01493279574
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "TGTP",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Govt Model Primary School SIde"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53849848971,
+                    12.87124829167
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "station": "SSFY",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55413174093,
+                    13.01405472309
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "LBGH",
+                "ref": "C",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57982998952,
+                    12.94605868684
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VSWA",
+                "railway": "subway_entrance",
+                "ref": "B",
+                "name": "Government Arts and Science College Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58472904429,
+                    12.97451209650
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KRAM",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.67766355395,
+                    12.99986401596
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54089504413,
+                    13.02798395510
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JPN",
+                "ref": "C",
+                "railway": "subway_entrance",
+                "name": "JP Nagar 6th Phase Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57341146402,
+                    12.90727325351
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "RRRN",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51919864535,
+                    12.93634868856
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.62623891100,
+                    12.97634431610
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "RVR"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58012031915,
+                    12.92193042617
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Whitefield Railway Station Side",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "station": "WHTM"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.75814592570,
+                    12.99586537354
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "YPM",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55031763971,
+                    13.02305482028
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "station": "KRAM",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.67808454610,
+                    13.00001471080
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "TTY",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.61762427477,
+                    12.97294877069
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "South End Circle Side",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "station": "SECE"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58033089273,
+                    12.93807007930
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57394119963,
+                    12.95075997735
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "NYHM",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52498148799,
+                    12.94112727763
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Thalaghattapura Police Station Side",
+                "ref": "B",
+                "station": "TGTP",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53819942340,
+                    12.87148362477
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "APTS"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53008037537,
+                    12.86210150885
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "SPRU",
+                "railway": "subway_entrance",
+                "ref": "C",
+                "name": "Prakash Nagar"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56382524833,
+                    12.99625739808
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59023427695,
+                    12.97782106090
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "TTY",
+                "ref": "C",
+                "railway": "subway_entrance",
+                "name": "South Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.61706173353,
+                    12.97263085489
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "TTY",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "North Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.61750027470,
+                    12.97301180897
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53846496210,
+                    12.87167319849
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "MYRD",
+                "railway": "subway_entrance",
+                "ref": "C",
+                "name": "Shaneshwara Temple Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53066777110,
+                    12.94623122198
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "E",
+                "station": "SVRD",
+                "railway": "subway_entrance",
+                "name": "80ft Road Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.64426134460,
+                    12.98521052546
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "PYID",
+                "name": "Police Station Side",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52514511079,
+                    13.03662229033
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "F",
+                "station": "VDSA",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59021013841,
+                    12.97786679930
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VSWA",
+                "railway": "subway_entrance",
+                "ref": "E",
+                "name": "Central College Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58314519987,
+                    12.97398412201
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "name": "MS Ramaiah Enclave Side",
+                "railway": "subway_entrance",
+                "station": "NGSA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.50052243337,
+                    13.04787655987
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "station": "BSNK",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57360983584,
+                    12.91607400531
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "PEYA",
+                "destination": "Madavara",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53285645902,
+                    13.03317300597
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "station": "PYID",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52498685777,
+                    13.03651776980
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53022253379,
+                    12.86190146694
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.61709995501,
+                    12.97264327021
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "MAGR",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Kamaraj Road Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.60622157574,
+                    12.97558896103
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "SECE"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57994329336,
+                    12.93874754781
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1",
+                "station": "UWVL"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.75392167951,
+                    12.98770156032
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "RRRN",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "Sports Authority of India Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51953661308,
+                    12.93688196194
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.67718579587,
+                    12.99983819786
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "destination": "Silk Institute",
+                "station": "APRC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56245072868,
+                    12.88855429949
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Thigalarapalya",
+                "station": "ITPL",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.73787110910,
+                    12.98780910404
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "D",
+                "station": "KRAM",
+                "name": "BMC Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57464795768,
+                    12.96080661748
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "station": "YPI",
+                "railway": "subway_entrance",
+                "name": "GG Palya Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54090845317,
+                    13.02800420912
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jayanagar 4th Block Side",
+                "ref": "B",
+                "station": "JYN",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58032083444,
+                    12.92895841572
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VSWA",
+                "railway": "subway_entrance",
+                "ref": "C",
+                "name": "City Civil Court Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58299633726,
+                    12.97349796629
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "BGUC",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51273988605,
+                    12.93568992621
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "NYHM",
+                "name": "Pantarapalya Side",
+                "ref": "A",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52536371216,
+                    12.94159780294
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KDGD",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "Pattandur Agrahara Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.74689908936,
+                    12.98549835083
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JPN",
+                "ref": "E",
+                "name": "Ilyas Nagar Side",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57283948295,
+                    12.90759286826
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "BYPH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.65235422969,
+                    12.99074808056
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "PYID",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52608119905,
+                    13.03609445063
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "CBPK",
+                "railway": "subway_entrance",
+                "ref": "D",
+                "name": "Cubbon Park/BSNL Office"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59655758604,
+                    12.98117571775
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "station": "PATG",
+                "name": "Dubasipalya Side",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.49818757042,
+                    12.92445539855
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71599501237,
+                    12.97763156645
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.74731114373,
+                    12.98566202853
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "JTPM",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.66885307542,
+                    12.99676140963
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KGWA",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Railway Station Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57120399594,
+                    12.97569089613
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "SPRU",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56377696455,
+                    12.99653966022
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "TTY",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "South Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.61681362920,
+                    12.97287458715
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.72757008538,
+                    12.98152986873
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "station": "TGTP",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53856420249,
+                    12.87186277338
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Vasanthapura Main Road Side",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "station": "APRC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56259679727,
+                    12.88910160114
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jayanagar 4th Block Side",
+                "station": "JYN",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58036978509,
+                    12.92920970623
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KRAM",
+                "railway": "subway_entrance",
+                "ref": "B",
+                "name": "KR Market Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57498726115,
+                    12.96049294820
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "MAGR",
+                "ref": "D",
+                "railway": "subway_entrance",
+                "name": "Church Street Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.60659575328,
+                    12.97481659613
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "station": "MLSD",
+                "name": "Mysore Road Side",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.48806223139,
+                    12.91510010308
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71158680186,
+                    12.98908192032
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1",
+                "station": "SVRD"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.64502595589,
+                    12.98607840720
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "LBGH",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58016325466,
+                    12.94683113117
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "KVPR",
+                "name": "Gayahtri Nagar"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55722029924,
+                    12.99856904038
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "MYRD",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Bapuji Nagar Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53002807364,
+                    12.94675009710
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70410612091,
+                    12.99343741170
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55303740367,
+                    12.88484364534
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "RJNR",
+                "destination": "Madavara",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54953979909,
+                    13.00079962966
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "AGPP",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53358601451,
+                    12.96187177501
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.67839983039,
+                    13.00003126790
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "LBGH",
+                "destination": "Madavara",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57988696429,
+                    12.94674136366
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "BIET",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "BIEC Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.47282191977,
+                    13.05741759582
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2",
+                "station": "SSHP"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.72763950311,
+                    12.98077301418
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VJN",
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53740548015,
+                    12.97145924756
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "station": "APTS",
+                "railway": "subway_entrance",
+                "name": "Jyothi Farm"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52969061939,
+                    12.86157705321
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "JYN",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58030408678,
+                    12.92901682565
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "RRRN",
+                "name": "Rajarajeshwari Nagar Side",
+                "ref": "A",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51968547568,
+                    12.93645063057
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1",
+                "station": "VWIA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70904543168,
+                    12.98050206379
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "station": "SVRD",
+                "railway": "subway_entrance",
+                "name": "Isolation Hospital Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.64475755326,
+                    12.98603773476
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "SPGD"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57071851611,
+                    12.99042399871
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "name": "Jyothy Kendriya Vidyalaya Side",
+                "ref": "A",
+                "station": "PUTH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57068633966,
+                    12.89613288837
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2",
+                "station": "BRCS"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56497532473,
+                    12.97572196064
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "destination": "Silk Institute",
+                "station": "PUTH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56995258907,
+                    12.89569351301
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "HSLI",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54479764819,
+                    12.97409390812
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "D",
+                "station": "SVRD",
+                "railway": "subway_entrance",
+                "name": "80ft Road Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.64450676672,
+                    12.98537779707
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "KRAM",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.67722648733,
+                    12.99980216060
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "VDSA",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59180773994,
+                    12.97898801814
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "C",
+                "station": "SVRD",
+                "railway": "subway_entrance",
+                "name": "80ft Road Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.64490507476,
+                    12.98546862029
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "D",
+                "station": "BRCS",
+                "name": "Magadi Road/Leprosy Hospital"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56519317493,
+                    12.97538900214
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "VDSA",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59134301761,
+                    12.97825368867
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KGWA",
+                "ref": "C",
+                "railway": "subway_entrance",
+                "name": "Tank Bund Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57291525334,
+                    12.97462971573
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "JYN"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58001571300,
+                    12.92998751906
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "GDCP",
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70422558649,
+                    12.99341217175
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "AGPP",
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53347872615,
+                    12.96116080269
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "MNJN",
+                "name": "Manjunath Nagar Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.49486163124,
+                    13.04980622263
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "KVPR"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55636870325,
+                    12.99852068578
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "C",
+                "station": "IDN",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.63894453578,
+                    12.97816672020
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "PUTH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57042766889,
+                    12.89659187600
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "station": "KDNH",
+                "railway": "subway_entrance",
+                "name": "Kundalahalli Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71563023195,
+                    12.97738065117
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JPN",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "JP Nagar 6th Phase Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57339939408,
+                    12.90793470526
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Whitefield Traffic Police Station Side",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "WHTM"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.75789379537,
+                    12.99497416842
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56256863341,
+                    12.88867672453
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KGWA",
+                "ref": "D",
+                "railway": "subway_entrance",
+                "name": "BMTC Bus Stand"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57317006320,
+                    12.97614044771
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59230360322,
+                    12.97908477849
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "HLRU",
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.62677300716,
+                    12.97683019065
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gubbala Gate Side",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "station": "KLPK"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55270078644,
+                    12.88482534264
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "HLRU",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.62630060248,
+                    12.97623192576
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.63907998666,
+                    12.97820788653
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.48743861847,
+                    12.91441514039
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70343959197,
+                    12.99339951547
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JIDL",
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.48729108691,
+                    13.05246226968
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "station": "UWVL",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.75382733886,
+                    12.98684376614
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "KDGD",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.74741564441,
+                    12.98564678779
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Orion Mall Side",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "SSFY"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55431949019,
+                    13.01349025140
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "MIRD",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55486129642,
+                    12.97549486706
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "HLRU",
+                "ref": "C",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.62686654791,
+                    12.97637176009
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "Sri Sathya Sai Hospital Side",
+                "station": "SSHP"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.72780477867,
+                    12.98115742211
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "SPRU",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Maruthi Extension"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56406261444,
+                    12.99646779417
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "KGWA",
+                "destination": "Madavara",
+                "name": "Platform 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57301985681,
+                    12.97475256368
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "RJNR",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54986702859,
+                    12.99999991091
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "RV College of Engineering Side",
+                "station": "PATG",
+                "ref": "A",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.49836861953,
+                    12.92402273857
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "C",
+                "station": "MHLI",
+                "name": "ISKCON Temple Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54894703493,
+                    13.00785846931
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "APMC Market Side",
+                "station": "YPM",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55038200736,
+                    13.02257137911
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "destination": "Silk Institute",
+                "station": "RVR"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58040869293,
+                    12.92095970143
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "HLRU",
+                "ref": "B",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.62653663620,
+                    12.97660045985
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "KLPK"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55319373597,
+                    12.88494173420
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "name": "KEB Colony Side",
+                "station": "DKIA",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71106242061,
+                    12.98853177046
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "KRMT"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57465063989,
+                    12.96132285751
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "Maheswari Nagar Side",
+                "station": "MDVP"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.69262894854,
+                    12.99636585845
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "DJNR",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53700851321,
+                    12.95200162473
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "HSLI",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54560231090,
+                    12.97428209710
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kaveri Nagara Side",
+                "station": "GDCP",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70382583075,
+                    12.99360598388
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jaraganahalli Side",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "PUTH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57082514398,
+                    12.89638127084
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "GDCP",
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70334024028,
+                    12.99341561066
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "station": "YPI",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54145562112,
+                    13.02814532282
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1",
+                "station": "DKIA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71106571674,
+                    12.98853281099
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.64442562923,
+                    12.98590770823
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.69263800200,
+                    12.99638970568
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "MLSD",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.48813866496,
+                    12.91514194191
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "JLHL",
+                "destination": "Madavara",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51924156606,
+                    13.03961163609
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "VSWA",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58382580802,
+                    12.97414745999
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "VDHP"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.72488116682,
+                    12.97665012426
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "station": "MNJN",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.49503731191,
+                    13.04997476103
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "YPM",
+                "ref": "D",
+                "name": "Railway Station Side",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54968732327,
+                    13.02364801816
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56382591955,
+                    12.99664876928
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "RVR"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58026718557,
+                    12.92133788101
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Judicial Layout BDA",
+                "station": "APTS",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53016453203,
+                    12.86166547015
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.75789648026,
+                    12.99504734428
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KDGD",
+                "name": "Kadugodi Tree Park Side",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.74704426460,
+                    12.98586131595
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Shakambari Side",
+                "station": "BSNK",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57400255617,
+                    12.91622198483
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "station": "NLC",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57358914020,
+                    12.95101002551
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56289452180,
+                    12.88924017700
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57337257132,
+                    12.90792882344
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "station": "KRMT",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57454871595,
+                    12.95991136323
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "CLGD",
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.46173499942,
+                    12.89781339690
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "IDN",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.63917423658,
+                    12.97842937980
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71116435394,
+                    12.98861408922
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70898640022,
+                    12.98061639340
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "C",
+                "station": "BRCS",
+                "name": "Magadi Road/Leprosy Hospital"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56536349520,
+                    12.97558895188
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jayanagar 7th Block Side",
+                "ref": "C",
+                "station": "JYN",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58001707427,
+                    12.92998383760
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "destination": "Silk Institute",
+                "station": "MHLI"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54881560266,
+                    13.00761542864
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.60661452740,
+                    12.97519166728
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "station": "SPRU",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56282209814,
+                    12.99649261721
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "HLRU",
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.62653361474,
+                    12.97599958396
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.74664193124,
+                    12.98569862045
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "PEYA",
+                "name": "CMTI Side",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53351359487,
+                    13.03287511597
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Konankunte Village Side",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "APRC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56284892492,
+                    12.88883164075
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "B",
+                "station": "MHLI",
+                "name": "Srinivasa Temple Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54862919316,
+                    13.00818383508
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "CKPE",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57455944479,
+                    12.96690079545
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "DSH",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "Jalahalli Cross Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51284450158,
+                    13.04324896603
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "station": "SVRD",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.64431882634,
+                    12.98555928592
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "MLSD",
+                "name": "Kengeri Bus Terminal Side",
+                "ref": "A",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.48725890979,
+                    12.91448703600
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56536617741,
+                    12.97562293025
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "station": "YPM",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54940032423,
+                    13.02338408593
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Seetharampalya Side",
+                "station": "VWIA",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70898237690,
+                    12.98092611288
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "MHLI",
+                "name": "Srinivasa Temple Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54859431506,
+                    13.00791074607
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "AGPP",
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53370403171,
+                    12.96248864641
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "JLHL",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52034663618,
+                    13.03919354831
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "ITPL",
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.73829787617,
+                    12.98773023735
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51185208425,
+                    12.93495403563
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "YPM",
+                "ref": "E",
+                "name": "Railway Station Side",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55031764239,
+                    13.02360359350
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "NLC",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57387751398,
+                    12.95003941393
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "NGSA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.49954341769,
+                    13.04804118539
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "NLC",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57389895551,
+                    12.95103183065
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.47624039516,
+                    12.90764385037
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "name": "Doddanekundi Side",
+                "station": "VWIA",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70862161845,
+                    12.98082940856
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hesarghatta Cross Side",
+                "station": "DSH",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51189499959,
+                    13.04356122029
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1",
+                "station": "VDHP"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.72529660568,
+                    12.97665580270
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JPN",
+                "name": "Outer Ring Road Side",
+                "ref": "D",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57300645046,
+                    12.90664709501
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "KGWA",
+                "destination": "Madavara",
+                "name": "Platform 3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57288038194,
+                    12.97598101364
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "BSNK",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57374952998,
+                    12.91507259821
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "TTY",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.61674058707,
+                    12.97300166621
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "MYRD",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53037809253,
+                    12.94686773729
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JIDL",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Anchepalya Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.48833581671,
+                    13.05212780775
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "VJRH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54484102166,
+                    12.87801404162
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "E",
+                "station": "YPI",
+                "railway": "subway_entrance",
+                "name": "MES Road Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54027008742,
+                    13.02837005250
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "MLSD",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.48740910411,
+                    12.91411711268
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "MIRD",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55578666657,
+                    12.97572225292
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "D",
+                "railway": "subway_entrance",
+                "name": "Yelachenahalli Side",
+                "station": "PUTH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56949007444,
+                    12.89555441770
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "YPI",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "GG Palya Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54114984393,
+                    13.02786310580
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "MNJN"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.49381421924,
+                    13.05014199416
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "MIRD",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55533336520,
+                    12.97562032568
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "NYHM",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52526043773,
+                    12.94232975280
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "D",
+                "station": "BSNK",
+                "name": "Banashankari Temple Side",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57359117236,
+                    12.91645564168
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bangalore University Side",
+                "station": "BGUC",
+                "ref": "B",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51215517253,
+                    12.93551738508
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52459660038,
+                    12.94128672748
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "station": "CKPE",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57461308360,
+                    12.96612711104
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57066488132,
+                    12.89614530815
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JIDL",
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.48848735750,
+                    13.05230026394
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "Mysore Sandal Soap Factory Side",
+                "station": "SSFY"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55386888713,
+                    13.01382997519
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "station": "SPGD",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57123350561,
+                    12.98997968704
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VSWA",
+                "railway": "subway_entrance",
+                "ref": "D",
+                "name": "Central College Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58278846607,
+                    12.97385212821
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VDSA",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "GPO Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59268179402,
+                    12.97947944515
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.48813465171,
+                    12.91494062670
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JPN",
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57296680605,
+                    12.90795792040
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "station": "KDNH",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71610325435,
+                    12.97762902932
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "JTPM",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.66813042381,
+                    12.99626301921
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "KGIT",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.47619695204,
+                    12.90758424372
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71532446012,
+                    12.97750872254
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.73754790291,
+                    12.98750984752
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58037581906,
+                    12.93759692472
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JLHL",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Jalahalli Cross Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51933812961,
+                    13.03965605396
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "MAGR",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.60723522025,
+                    12.97550775000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "HSLI",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54637478709,
+                    12.97444937606
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "A'",
+                "station": "KGWA",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57152050465,
+                    12.97608555968
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2",
+                "station": "DKIA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71168140769,
+                    12.98915275191
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "C",
+                "station": "NLC",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57356434926,
+                    12.95022018954
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "BGUC",
+                "name": "Kenchenahalli Side",
+                "ref": "A",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51219540566,
+                    12.93511742110
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "KDNH",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71522694429,
+                    12.97750603489
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57382988863,
+                    12.91535957706
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "RJNR",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "BWSSB Water Tank Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54953174711,
+                    12.99949290357
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "MHLI"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54883706033,
+                    13.00881235560
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "JPN",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "JP Nagar 6th Phase Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57329747014,
+                    12.90823078931
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "KGWA",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57325589120,
+                    12.97581373571
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "KIADB Industrial Area Side",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "SSHP"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.72741049259,
+                    12.98123779353
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kengeri Satellite Town Side",
+                "station": "KGIT",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.47657298774,
+                    12.90774320012
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.50013619594,
+                    13.04828091431
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "station": "UWVL",
+                "railway": "subway_entrance",
+                "name": "Kadugodi Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.75406025283,
+                    12.98719196809
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "IDN",
+                "ref": "B",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.63904511862,
+                    12.97819351056
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54477888212,
+                    12.87779569898
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "B",
+                "station": "JLHL",
+                "railway": "subway_entrance",
+                "name": "Peenya Industrial Area Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52015620336,
+                    13.03919746397
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59664609894,
+                    12.98114696746
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "ITPL",
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.73744969840,
+                    12.98748287151
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "TGTP",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.51295446813,
+                    13.04320716182
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.73819431528,
+                    12.98772024188
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "CBPK",
+                "railway": "subway_entrance",
+                "ref": "B",
+                "name": "Chinnaswamy Stadium"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59767606720,
+                    12.98056804053
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "C",
+                "railway": "subway_entrance",
+                "name": "Jyothy Kendriya Vidyalaya Side",
+                "station": "PUTH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57021024756,
+                    12.89568449201
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Seetharampalya Side",
+                "station": "DKIA",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.71147146754,
+                    12.98868988250
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53823026881,
+                    12.87105610281
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1",
+                "station": "BYPH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.65278953930,
+                    12.99094747638
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53329634599,
+                    13.03331737593
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "APMC Market Side",
+                "ref": "B",
+                "station": "YPM",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54967927665,
+                    13.02296074168
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "station": "PATG",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.49857782245,
+                    12.92483578187
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "E",
+                "station": "BRCS",
+                "name": "Minerva Mill Road Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56472378835,
+                    12.97602674976
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54472657904,
+                    12.87715639298
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "BIET",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "BIEC Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.47281119093,
+                    13.05733398434
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "CLGD",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Challaghatta Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.46144800305,
+                    12.89734016542
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kadugodi Colony Side",
+                "station": "UWVL",
+                "railway": "subway_entrance",
+                "ref": "A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.75368742578,
+                    12.98734649709
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KRAM",
+                "railway": "subway_entrance",
+                "ref": "C",
+                "name": "Vanivilas Hospital Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57428184018,
+                    12.96002506331
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "station": "MDVP",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.69321969432,
+                    12.99643660852
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "destination": "Silk Institute",
+                "station": "KVPR"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55737184942,
+                    12.99846318922
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "PF Office Side",
+                "ref": "B",
+                "station": "PYID",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52600877404,
+                    13.03614671752
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "KGIT",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.47675053996,
+                    12.90825771874
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "C",
+                "name": "APMC Market Side",
+                "station": "YPM",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54895910352,
+                    13.02336840401
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kanakapura Road Side",
+                "ref": "C",
+                "railway": "subway_entrance",
+                "station": "SECE"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.57987826996,
+                    12.93813608569
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "destination": "Silk Institute",
+                "station": "KLPK"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55233389805,
+                    12.88437688995
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2",
+                "station": "VWIA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.70857867890,
+                    12.98123516277
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "station": "SECE",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58023166713,
+                    12.93777688848
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "PATG",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.49806283832,
+                    12.92370642182
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "DJNR",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53734110713,
+                    12.95145791865
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "station": "VJRH",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54470064663,
+                    12.87701257268
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58035167985,
+                    12.92921068689
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "YPI"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.54050075471,
+                    13.02850593966
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.64456510410,
+                    12.98528305405
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "TGTP",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.53815382451,
+                    12.87093451517
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.60682373971,
+                    12.97569088829
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55247548088,
+                    12.88445536631
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "CBPK",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59718672336,
+                    12.98091575839
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Vijaya College Side",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "SECE"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58040800624,
+                    12.93759561701
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58313044772,
+                    12.97401417999
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.47667357191,
+                    12.90817588699
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2",
+                "station": "BYPH"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.65203159163,
+                    12.99050162213
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Doddakallasandra Side",
+                "railway": "subway_entrance",
+                "ref": "A",
+                "station": "KLPK"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55281612143,
+                    12.88447366904
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "RRRN",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52003549457,
+                    12.93695516664
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "MDVP",
+                "destination": "Challaghatta",
+                "name": "Platform 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.69234665412,
+                    12.99657998266
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Madavara",
+                "name": "Platform 1",
+                "station": "APRC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56302181158,
+                    12.88939790174
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Challaghatta",
+                "name": "Platform 2",
+                "station": "VDHP"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.72441208914,
+                    12.97661830350
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.52553805575,
+                    13.03646158467
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "station": "LBGH",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58017533806,
+                    12.94577073546
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "VDSA",
+                "ref": "D",
+                "railway": "subway_entrance",
+                "name": "Cubbon Park Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59092226490,
+                    12.97756491711
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "KGIT",
+                "ref": "B",
+                "name": "Kengeri Side",
+                "railway": "subway_entrance"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.47634634107,
+                    12.90808176888
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "station": "VSWA",
+                "name": "Platform 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.58447356626,
+                    12.97473559109
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "BIET",
+                "public_transport": "platform",
+                "name": "Platform 2",
+                "destination": "Silk Institute"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.47341870725,
+                    13.05741106759
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "A",
+                "name": "Manjunath Nagar Side",
+                "station": "NGSA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.49964803323,
+                    13.04819926011
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "CBPK",
+                "railway": "subway_entrance",
+                "ref": "C",
+                "name": "Cubbon Park/BSNL Office"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.59695723519,
+                    12.98105679609
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "public_transport": "platform",
+                "destination": "Whitefield (Kadugodi)",
+                "name": "Platform 1",
+                "station": "BRCS"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.56582140310,
+                    12.97597607326
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "railway": "subway_entrance",
+                "ref": "B",
+                "station": "KVPR",
+                "name": "Prakash Nagar"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.55724847183,
+                    12.99827893486
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "highway": "elevator"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.75384902820,
+                    12.98694138982
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "station": "MAGR",
+                "ref": "B",
+                "railway": "subway_entrance",
+                "name": "Kamaraj Road Side"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.60729446873,
+                    12.97532104533
+                ]
+            }
+        }
+    ]
+}
