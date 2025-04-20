@@ -47,16 +47,13 @@
 		metroRide1Stops: 0,
 		metroRide1Platform: 0,
 		metroRide1DirectionName: '',
-		metroRide1ElevatorDirection: '',
 		interchangeRequired: false,
 		interchangeColor: '',
-		interchangeElevatorDirection: '',
 		metroRide2Ref: '',
 		metroRide2Time: 24,
 		metroRide2Stops: 0,
 		metroRide2Platform: 0,
 		metroRide2DirectionName: '',
-		metroRide2ElevatorDirection: '',
 		lastMileDistance: 600,
 		lastMileTime: 16
 	};
@@ -87,7 +84,6 @@
 
 			isLoading = true;
 			journeyDetails = await journeyCalculator.calculateJourney(fromCoords, toCoords);
-			console.log('Journey details:', journeyDetails);
 
 			// Get station colors from the stations array
 			const sourceStation = stations.find((s) => s.name === journeyDetails?.originStation);
@@ -111,16 +107,13 @@
 					metroRide1Stops: journeyDetails.firstLegMetroStops || 0,
 					metroRide1Platform: journeyDetails.firstLegPlatform || 0,
 					metroRide1DirectionName: journeyDetails.firstLegDirectionName || '',
-					metroRide1ElevatorDirection: journeyDetails.firstLegElevatorDirection || '',
 					interchangeRequired: journeyDetails.requiresTransfer,
 					interchangeColor: journeyDetails.transferToColor || '',
-					interchangeElevatorDirection: journeyDetails.transferToElevatorDirection || '',
 					metroRide2Ref: journeyDetails?.secondLegExit,
 					metroRide2Time: journeyDetails.secondLegMetroTime || 16,
 					metroRide2Stops: journeyDetails.secondLegMetroStops || 0,
 					metroRide2Platform: journeyDetails.secondLegPlatform || 0,
 					metroRide2DirectionName: journeyDetails.secondLegDirectionName || '',
-					metroRide2ElevatorDirection: journeyDetails.secondLegElevatorDirection || '',
 					lastMileDistance: journeyDetails.secondLegWalkDistance || 600,
 					lastMileTime: journeyDetails.secondLegWalkTime || 16
 				};
@@ -411,6 +404,10 @@
 			walkingRouteFromStation={secondLegWalkRoute}
 			{originCode}
 			{destinationCode}
+			metroRide1Ref={planDetails.metroRide1Ref}
+			metroRide2Ref={planDetails.metroRide2Ref}
+			metroRide1Platform={planDetails.metroRide1Platform}
+			metroRide2Platform={planDetails.metroRide2Platform}
 		/>
 	</div>
 </main>

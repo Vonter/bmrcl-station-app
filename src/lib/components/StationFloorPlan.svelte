@@ -4,16 +4,22 @@
 	import { STATION_CONFIGS } from '$lib/config/stations';
 	import { ZOOM_BREAKPOINTS } from '$lib/config/constants';
 	export let map: Map;
-	export let currentFloor: string = 'Ground';
+	export let currentFloor: string = 'Concourse';
 	export let destinationCode: string | undefined;
 	export let originCode: string | undefined;
 	export let createMarker: (
 		iconPath: string,
 		coordinates: [number, number],
 		minZoom?: number,
-		maxZoom?: number
+		maxZoom?: number,
+		height?: string,
+		width?: string
 	) => Marker | null;
 	export let exitMarkers: Marker[] = [];
+	export let metroRide1Ref: string | undefined;
+	export let metroRide2Ref: string | undefined;
+	export let metroRide1Platform: string | undefined;
+	export let metroRide2Platform: string | undefined;
 
 	// Define GeoJSON types
 	type GeoJSONFeature = {
@@ -90,18 +96,96 @@
 			exitMarkers.forEach((marker) => marker.remove());
 			exitMarkers = [];
 
-			// Only add exit markers if the current floor is Ground
-			if (currentFloor === 'Ground' && data.features) {
+			// Only add elevator markers if the current floor is Ground or Concourse
+			if (currentFloor === 'Ground' || currentFloor === 'Concourse') {
 				data.features.forEach((feature) => {
-					// Only process subway entrance features
+					// Process elevator features
+					if (feature.properties?.highway === 'elevator') {
+						const coordinates = feature.geometry.coordinates;
+						const marker = createMarker(
+							'elevator.svg',
+							coordinates as [number, number],
+							ZOOM_BREAKPOINTS.AREA,
+							undefined,
+							undefined, // No need for custom height for elevators
+							undefined // No need for custom width for elevators
+						);
+						if (marker) exitMarkers.push(marker);
+					}
+				});
+			}
+
+			// Only add exit markers if the current floor is Ground or Concourse
+			if (currentFloor === 'Ground' || currentFloor === 'Concourse') {
+				data.features.forEach((feature) => {
+					// Process subway entrance features
 					if (feature.properties?.railway === 'subway_entrance' && feature.properties?.ref) {
 						const coordinates = feature.geometry.coordinates;
 						const exitCode = feature.properties.ref;
+						const stationCode = feature.properties?.station || '';
+
+						// Check if this exit matches the journey plan's relevant exit for the origin or destination
+						// Only highlight metroRide1Ref at origin station and metroRide2Ref at destination station
+						const isOriginExit = stationCode === originCode && exitCode === metroRide1Ref;
+						const isDestinationExit = stationCode === destinationCode && exitCode === metroRide2Ref;
+						const isJourneyExit = isOriginExit || isDestinationExit;
+
+						const iconPath = isJourneyExit
+							? `${exitCode.toLowerCase()}Highlight.svg`
+							: `${exitCode.toLowerCase()}.svg`;
+
 						const marker = createMarker(
-							`${exitCode.toLowerCase()}.svg`,
+							iconPath,
 							coordinates as [number, number],
-							ZOOM_BREAKPOINTS.AREA
+							ZOOM_BREAKPOINTS.AREA,
+							undefined,
+							isJourneyExit ? '36px' : undefined,
+							isJourneyExit ? '36px' : undefined
 						);
+						if (marker) exitMarkers.push(marker);
+					}
+				});
+			}
+
+			// Only add platform markers if the current floor is Platform or Concourse
+			if (
+				currentFloor === 'Platform' ||
+				currentFloor === 'Concourse' ||
+				currentFloor === 'Green' ||
+				currentFloor === 'Purple'
+			) {
+				// Add markers for each point that belongs to origin or destination station
+				data.features.forEach((feature: any) => {
+					// Only process platform features
+					if (feature.properties.public_transport === 'platform') {
+						const coordinates = feature.geometry.coordinates;
+						const platformColor = feature.properties.color;
+						const platformCode = feature.properties.ref;
+						const stationCode = feature.properties?.station || '';
+
+						// Check if this platform matches the journey plan's relevant platform for the origin or destination
+						const isOriginPlatform =
+							stationCode === originCode && String(platformCode) === String(metroRide1Platform);
+						let isInterchangePlatform = false;
+						if (metroRide2Platform) {
+							isInterchangePlatform =
+								stationCode === 'KGWA' && String(platformCode) === String(metroRide2Platform);
+						}
+						const isJourneyPlatform = isOriginPlatform || isInterchangePlatform;
+
+						// Use highlighted version of the icon if it's part of the journey
+						const iconSuffix = isJourneyPlatform ? 'Highlight.svg' : '.svg';
+						const iconPath = `${platformColor}${platformCode}${iconSuffix}`;
+						// Create marker for platform
+						const marker = createMarker(
+							iconPath,
+							coordinates as [number, number],
+							ZOOM_BREAKPOINTS.AREA,
+							undefined,
+							getMarkerHeight(platformColor, platformCode),
+							getMarkerWidth(platformColor, platformCode)
+						);
+
 						if (marker) exitMarkers.push(marker);
 					}
 				});
@@ -110,6 +194,18 @@
 			console.error('Error rendering exit markers:', error);
 		}
 	};
+
+	// Add function to ensure platform layers are always on top
+	function ensurePlatformLayersOnTop() {
+		if (!map) return;
+
+		// Since platforms are now SVG markers, we only need to ensure floor plan layers are handled properly
+		state.currentLayers.forEach((layerId) => {
+			if (map.getLayer(layerId)) {
+				map.moveLayer(layerId);
+			}
+		});
+	}
 
 	// Combined update function for both floor changes and visible stations
 	async function updateStationDisplay(newFloor?: string) {
@@ -131,6 +227,14 @@
 			state.visibleStations = [];
 			state.currentZoom = zoom;
 			return;
+		}
+
+		// Reset floor to Concourse when zooming out beyond AREA breakpoint
+		if (zoom < ZOOM_BREAKPOINTS.AREA && currentFloor !== 'Concourse') {
+			await clearExistingLayers();
+			currentFloor = 'Concourse';
+			// Load exit markers when floor changes
+			loadAndRenderStationDetails();
 		}
 
 		// Update visible stations with bounds check
@@ -181,11 +285,18 @@
 		if (!state.initialized && zoom >= ZOOM_BREAKPOINTS.AREA) {
 			state.initialized = true;
 		}
+
+		// Ensure platform layers are always on top
+		ensurePlatformLayersOnTop();
 	}
 
 	function clearExistingLayers(): Promise<void> {
 		return new Promise((resolve) => {
-			// Immediately remove layers and sources
+			// Remove all markers
+			exitMarkers.forEach((marker) => marker.remove());
+			exitMarkers = [];
+
+			// Remove floor plan layers and sources
 			state.currentLayers.forEach((layerId) => {
 				if (map.getLayer(layerId)) {
 					map.removeLayer(layerId);
@@ -269,17 +380,40 @@
 				map.moveLayer(layerId);
 
 				state.currentLayers.push(layerId);
+
+				// Ensure platform layers stay on top even after adding floor plans
+				ensurePlatformLayersOnTop();
 			}
 		} catch (error) {
-			console.error(`Error in loadStationFloorPlan for ${stationId}-${floor}:`, error);
+			console.error(`Error loading floor plan for ${stationId}-${floor}:`, error);
 		}
+	}
+
+	// Helper function to get marker height based on color and reference
+	function getMarkerHeight(color: string, ref: string): string {
+		if (color === 'green' && ref === '1') return '62px';
+		if (color === 'green' && ref === '2') return '54px';
+		if (color === 'green' && ref === '3') return '62px';
+		if (color === 'green' && ref === '4') return '54px';
+		if (color === 'purple' && ref === '1') return '54px';
+		if (color === 'purple' && ref === '2') return '62px';
+		return '54px'; // Default height as fallback
+	}
+
+	// Helper function to get marker width based on color and reference
+	function getMarkerWidth(color: string, ref: string): string {
+		if (color === 'green' && ref === '1') return '130px';
+		if (color === 'green' && ref === '2') return '147px';
+		if (color === 'green' && ref === '3') return '130px';
+		if (color === 'green' && ref === '4') return '147px';
+		if (color === 'purple' && ref === '1') return '195px';
+		if (color === 'purple' && ref === '2') return '155px';
+		return '10px'; // Default width as fallback
 	}
 
 	// Helper function to fetch PNG URL
 	async function fetchPngUrl(stationId: StationId, floor: string): Promise<string> {
-		const suffix =
-			destinationCode && stationId === destinationCode.toLowerCase() ? 'Out.png' : 'In.png';
-		const response = await fetch(`/stations/${stationId}${floor}${suffix}`);
+		const response = await fetch(`/stations/${stationId}${floor}In.png`);
 		if (!response.ok) throw new Error(`Failed to fetch PNG: ${response.status}`);
 		const blob = await response.blob();
 		const pngUrl = URL.createObjectURL(blob);
@@ -295,10 +429,23 @@
 				updateStationDisplay(newFloor);
 			});
 		} else {
-			// For zoom/move events, just call updateStationDisplay without changing floor
-			// The updateStationDisplay function already has checks to avoid re-rendering
-			// when nothing has changed
-			updateStationDisplay();
+			// For zoom/move events, call updateStationDisplay
+			// The zoom check for resetting floor happens inside updateStationDisplay
+			// but we need to explicitly check for zoom here to ensure floor resets
+			if (map) {
+				const zoom = map.getZoom();
+				// If zooming out below AREA threshold, explicitly set floor to Concourse
+				if (zoom < ZOOM_BREAKPOINTS.AREA && currentFloor !== 'Concourse') {
+					updateStationDisplay('Concourse');
+				} else {
+					updateStationDisplay();
+				}
+
+				// Call loadAndRenderStationDetails when zoomed in to or past AREA zoom breakpoint
+				if (zoom >= ZOOM_BREAKPOINTS.AREA) {
+					loadAndRenderStationDetails();
+				}
+			}
 		}
 	}
 
@@ -308,16 +455,30 @@
 	];
 
 	// Modify reactive statement to avoid unnecessary reload
-	let previousData = { floor: currentFloor, origin: originCode, destination: destinationCode };
+	let previousData = {
+		floor: currentFloor,
+		origin: originCode,
+		destination: destinationCode,
+		metroRide1: metroRide1Ref,
+		metroRide2: metroRide2Ref
+	};
 
 	$: {
 		// Only reload if the values actually changed
-		const currentData = { floor: currentFloor, origin: originCode, destination: destinationCode };
+		const currentData = {
+			floor: currentFloor,
+			origin: originCode,
+			destination: destinationCode,
+			metroRide1: metroRide1Ref,
+			metroRide2: metroRide2Ref
+		};
 		if (
 			map &&
 			(currentData.floor !== previousData.floor ||
 				currentData.origin !== previousData.origin ||
-				currentData.destination !== previousData.destination)
+				currentData.destination !== previousData.destination ||
+				currentData.metroRide1 !== previousData.metroRide1 ||
+				currentData.metroRide2 !== previousData.metroRide2)
 		) {
 			previousData = { ...currentData };
 			loadAndRenderStationDetails();

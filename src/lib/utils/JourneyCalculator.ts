@@ -53,7 +53,6 @@ export interface JourneyDetails {
 	firstLegMetroTime: number; // was metroTimeBeforeTransfer, in minutes
 	firstLegMetroStops: number; // was metroStopsBeforeTransfer
 	firstLegDirectionName: string; // name of the terminal station in direction of travel
-	firstLegElevatorDirection: string; // direction of elevator at source station
 
 	secondLegExit: string; // was destStationRef
 	secondLegWalkTime: number; // was walkingTimeFromStation, in minutes
@@ -63,10 +62,8 @@ export interface JourneyDetails {
 	secondLegMetroTime: number; // was metroTimeAfterTransfer, in minutes
 	secondLegMetroStops: number; // was metroStopsAfterTransfer
 	secondLegDirectionName: string; // name of the terminal station in direction of travel
-	secondLegElevatorDirection: string; // direction of elevator at destination station
 
 	transferToColor?: string; // line color to transfer to for interchange trips
-	transferToElevatorDirection?: string; // direction of elevator at transfer station
 
 	totalTime: number; // no change, in minutes
 	totalDistanceKm: number; // no change, total distance in kilometers
@@ -146,8 +143,6 @@ export class JourneyCalculator {
 		platformAfterTransfer: number;
 		firstLegDirectionName: string;
 		secondLegDirectionName: string;
-		firstLegElevatorDirection: string;
-		secondLegElevatorDirection: string;
 		transferToColor?: string;
 	} {
 		const sourceStationData = stations.find((s) => s.name === sourceStation);
@@ -165,9 +160,7 @@ export class JourneyCalculator {
 				platformBeforeTransfer: 0,
 				platformAfterTransfer: 0,
 				firstLegDirectionName: '',
-				secondLegDirectionName: '',
-				firstLegElevatorDirection: '',
-				secondLegElevatorDirection: ''
+				secondLegDirectionName: ''
 			};
 		}
 
@@ -195,18 +188,6 @@ export class JourneyCalculator {
 				? sameColorStations[sameColorStations.length - 1].name
 				: sameColorStations[0].name;
 
-			// Calculate elevator directions
-			const firstLegElevatorDirection =
-				sourceStationData.code &&
-				STATION_CONFIGS[sourceStationData.code.toLowerCase()]?.floors[0] === 'Platform'
-					? 'up'
-					: 'down';
-			const secondLegElevatorDirection =
-				destStationData.code &&
-				STATION_CONFIGS[destStationData.code.toLowerCase()]?.floors[0] === 'Platform'
-					? 'down'
-					: 'up';
-
 			return {
 				time: 2 * stationCount,
 				timeBeforeTransfer: 2 * stationCount,
@@ -218,9 +199,7 @@ export class JourneyCalculator {
 				platformBeforeTransfer: platform,
 				platformAfterTransfer: 0,
 				firstLegDirectionName: directionName,
-				secondLegDirectionName: '',
-				firstLegElevatorDirection,
-				secondLegElevatorDirection
+				secondLegDirectionName: ''
 			};
 		}
 
@@ -240,9 +219,7 @@ export class JourneyCalculator {
 				platformBeforeTransfer: 0,
 				platformAfterTransfer: 0,
 				firstLegDirectionName: '',
-				secondLegDirectionName: '',
-				firstLegElevatorDirection: '',
-				secondLegElevatorDirection: ''
+				secondLegDirectionName: ''
 			};
 		}
 
@@ -303,18 +280,6 @@ export class JourneyCalculator {
 		// Add 5 minutes for line change at Majestic
 		const lineChangeBuffer = 5;
 
-		// Calculate elevator directions
-		const firstLegElevatorDirection =
-			sourceStationData.code &&
-			STATION_CONFIGS[sourceStationData.code.toLowerCase()]?.floors[0] === 'Platform'
-				? 'up'
-				: 'down';
-		const secondLegElevatorDirection =
-			destStationData.code &&
-			STATION_CONFIGS[destStationData.code.toLowerCase()]?.floors[0] === 'Platform'
-				? 'down'
-				: 'up';
-
 		return {
 			time: timeToMajestic + timeFromMajestic + lineChangeBuffer,
 			timeBeforeTransfer: timeToMajestic,
@@ -327,8 +292,6 @@ export class JourneyCalculator {
 			platformAfterTransfer,
 			firstLegDirectionName,
 			secondLegDirectionName,
-			firstLegElevatorDirection,
-			secondLegElevatorDirection,
 			transferToColor: destStationData.color === 'purple' ? 'Purple' : 'Green'
 		};
 	}
@@ -581,21 +544,6 @@ export class JourneyCalculator {
 			metroDistanceKm
 		).toFixed(2);
 
-		console.log('JourneyCalculator: Journey calculation complete', {
-			walkingTimeToStation,
-			walkingDistanceToStation,
-			metroTime: metroDetails.time,
-			metroStops: metroDetails.stops,
-			hasTransfer: metroDetails.hasTransfer,
-			platformBeforeTransfer: metroDetails.platformBeforeTransfer,
-			platformAfterTransfer: metroDetails.platformAfterTransfer,
-			walkingTimeFromStation,
-			walkingDistanceFromStation,
-			totalDistanceKm,
-			stationBuffer,
-			totalTime
-		});
-
 		const price = this.calculatePrice(sourceStation, destinationStation);
 
 		return {
@@ -618,10 +566,7 @@ export class JourneyCalculator {
 			secondLegPlatform: metroDetails.platformAfterTransfer,
 			firstLegDirectionName: metroDetails.firstLegDirectionName,
 			secondLegDirectionName: metroDetails.secondLegDirectionName,
-			firstLegElevatorDirection: metroDetails.firstLegElevatorDirection,
-			secondLegElevatorDirection: metroDetails.secondLegElevatorDirection,
 			...(metroDetails.hasTransfer && {
-				transferToElevatorDirection: metroDetails.transferToColor === 'Purple' ? 'up' : 'down',
 				transferToColor: metroDetails.transferToColor
 			}),
 			totalTime,

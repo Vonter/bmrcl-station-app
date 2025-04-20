@@ -124,6 +124,24 @@ export const STATION_CONFIGS: Record<StationId, StationConfig> = {
 			[77.5742, 12.96252] // Bottom left
 		]
 	},
+	ckpe: {
+		floors: ['Ground', 'Concourse', 'Platform'],
+		bounds: [
+			[77.57381, 12.96556], // Top left [lng, lat]
+			[77.57381, 12.96824], // Top right
+			[77.57534, 12.96824], // Bottom right
+			[77.57535, 12.96557] // Bottom left
+		]
+	},
+	spgd: {
+		floors: ['Platform', 'Concourse', 'Ground'],
+		bounds: [
+			[77.57088, 12.98942], // Top left [lng, lat]
+			[77.56965, 12.99105], // Top right
+			[77.57049, 12.99164], // Bottom right
+			[77.57171, 12.99002] // Bottom left
+		]
+	},
 	spru: {
 		floors: ['Platform', 'Concourse', 'Ground'],
 		bounds: [
@@ -474,6 +492,51 @@ export const STATION_CONFIGS: Record<StationId, StationConfig> = {
 			[77.56388, 12.97516], // Top right
 			[77.56381, 12.97615], // Bottom right
 			[77.56792, 12.97638] // Bottom left
+		]
+	},
+	mird: {
+		floors: ['Platform', 'Concourse', 'Ground'],
+		bounds: [
+			[77.55428, 12.97621], // Top left [lng, lat]
+			[77.55668, 12.97624], // Top right
+			[77.5567, 12.97507], // Bottom right
+			[77.5543, 12.97503] // Bottom left
+		]
+	},
+	hsli: {
+		floors: ['Platform', 'Concourse', 'Ground'],
+		bounds: [
+			[77.54451, 12.97466], // Top left [lng, lat]
+			[77.54637, 12.97466], // Top right
+			[77.54637, 12.97375], // Bottom right
+			[77.54451, 12.97375] // Bottom left
+		]
+	},
+	vjn: {
+		floors: ['Platform', 'Concourse', 'Ground'],
+		bounds: [
+			[77.53667, 12.97011], // Top left [lng, lat]
+			[77.5372, 12.97172], // Top right
+			[77.53803, 12.97146], // Bottom right
+			[77.5375, 12.96985] // Bottom left
+		]
+	},
+	agpp: {
+		floors: ['Platform', 'Concourse', 'Ground'],
+		bounds: [
+			[77.53438, 12.96261], // Top left [lng, lat]
+			[77.53373, 12.96114], // Top right
+			[77.53298, 12.96145], // Bottom right
+			[77.53363, 12.96292] // Bottom left
+		]
+	},
+	djnr: {
+		floors: ['Platform', 'Concourse', 'Ground'],
+		bounds: [
+			[77.53694, 12.95128], // Top left [lng, lat]
+			[77.53659, 12.95246], // Top right
+			[77.53719, 12.95263], // Bottom right
+			[77.53753, 12.95145] // Bottom left
 		]
 	},
 	myrd: {

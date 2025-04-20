@@ -14,19 +14,16 @@
 		firstMileTime: number;
 		interchangeRequired: boolean;
 		interchangeColor: string;
-		interchangeElevatorDirection: string;
 		metroRide1Time: number;
 		metroRide1Stops: number;
 		metroRide1Ref: string;
 		metroRide1Platform: number;
 		metroRide1DirectionName: string;
-		metroRide1ElevatorDirection: string;
 		metroRide2Time: number;
 		metroRide2Stops: number;
 		metroRide2Ref: string;
 		metroRide2Platform: number;
 		metroRide2DirectionName: string;
-		metroRide2ElevatorDirection: string;
 		lastMileDistance: number;
 		lastMileTime: number;
 	} = {
@@ -34,19 +31,16 @@
 		firstMileTime: 0,
 		interchangeRequired: false,
 		interchangeColor: '',
-		interchangeElevatorDirection: '',
 		metroRide1Time: 0,
 		metroRide1Stops: 0,
 		metroRide1Ref: '',
 		metroRide1Platform: 0,
 		metroRide1DirectionName: '',
-		metroRide1ElevatorDirection: '',
 		metroRide2Time: 0,
 		metroRide2Stops: 0,
 		metroRide2Ref: '',
 		metroRide2Platform: 0,
 		metroRide2DirectionName: '',
-		metroRide2ElevatorDirection: '',
 		lastMileDistance: 0,
 		lastMileTime: 0
 	};
@@ -103,6 +97,7 @@
 						labelText="Origin"
 						inline={false}
 						class="w-full"
+						readonly={true}
 					/>
 				</div>
 				<div>
@@ -114,6 +109,7 @@
 						labelText="Destination"
 						inline={false}
 						class="w-full"
+						readonly={true}
 					/>
 				</div>
 			</div>
@@ -176,11 +172,11 @@
 						<div>
 							<p>{station1Name} Metro Station</p>
 							<ul class="list-disc px-4 text-sm">
-								<li>Enter from Gate {planDetails.metroRide1Ref}</li>
+								<li>Gate {planDetails.metroRide1Ref}</li>
 								<li>
-									Go {planDetails.metroRide1ElevatorDirection} to Platform {planDetails.metroRide1Platform}
+									Platform {planDetails.metroRide1Platform}
 								</li>
-								<li>Enter train towards {planDetails.metroRide1DirectionName}</li>
+								<li>Towards {planDetails.metroRide1DirectionName}</li>
 							</ul>
 						</div>
 					</div>
@@ -209,10 +205,9 @@
 								<ul class="list-disc px-4 text-sm">
 									<li>Alight at Kempegowda Majestic Metro Station</li>
 									<li>
-										Go {planDetails.interchangeElevatorDirection} to {planDetails.interchangeColor} Line
-										Platform {planDetails.metroRide2Platform}
+										{planDetails.interchangeColor} Line Platform {planDetails.metroRide2Platform}
 									</li>
-									<li>Enter train towards {planDetails.metroRide2DirectionName}</li>
+									<li>Towards {planDetails.metroRide2DirectionName}</li>
 								</ul>
 							</div>
 						</div>
@@ -240,7 +235,7 @@
 							<p>{station2Name} Metro Station</p>
 							<ul class="list-disc px-4 text-sm">
 								<li>Get out of the train</li>
-								<li>Exit from Gate {planDetails.metroRide2Ref}</li>
+								<li>Gate {planDetails.metroRide2Ref}</li>
 							</ul>
 						</div>
 					</div>

@@ -55,7 +55,19 @@ export const findNearestPointOnLine = (
 		}
 	}
 
-	return { point: nearestPoint, segmentIndex: nearestSegmentIndex, distance: minDistance };
+	// Create a new array with the new point inserted at the appropriate position
+	const updatedLineCoordinates = [...lineCoordinates];
+
+	// Insert the nearest point into the line coordinates at the appropriate position
+	// We insert after the segment index
+	updatedLineCoordinates.splice(nearestSegmentIndex + 1, 0, nearestPoint);
+
+	return {
+		point: nearestPoint,
+		segmentIndex: nearestSegmentIndex,
+		distance: minDistance,
+		updatedLineCoordinates
+	};
 };
 
 // Determine which line color to use based on stations
@@ -222,12 +234,14 @@ const processLine = (
 	}
 
 	const startResult = findNearestPointOnLine(lineCoordinates, startStation.coordinates);
+	lineCoordinates = startResult.updatedLineCoordinates;
 	const endResult = findNearestPointOnLine(lineCoordinates, endStation.coordinates);
+	lineCoordinates = endResult.updatedLineCoordinates;
 
 	const startIndex = Math.min(startResult.segmentIndex, endResult.segmentIndex);
-	const endIndex = Math.max(startResult.segmentIndex, endResult.segmentIndex);
+	const endIndex = Math.max(startResult.segmentIndex, endResult.segmentIndex) + 1;
 
-	const segmentCoordinates = lineCoordinates.slice(startIndex, endIndex + 1);
+	const segmentCoordinates = lineCoordinates.slice(startIndex, endIndex + 2);
 
 	if (map.getSource(sourceId)) {
 		(map.getSource(sourceId) as maplibre.GeoJSONSource).setData({
@@ -343,7 +357,6 @@ export const highlightRelevantSegments = async (
 	) || ['', ''];
 
 	if (!sourceStation || !destinationStation) {
-		console.log('Could not find valid stations for journey');
 		return;
 	}
 
@@ -352,7 +365,6 @@ export const highlightRelevantSegments = async (
 	const destStationData = stations.find((s) => s.code === destinationStation);
 
 	if (!sourceStationData?.coordinates || !destStationData?.coordinates) {
-		console.log('Could not find valid station coordinates');
 		return;
 	}
 

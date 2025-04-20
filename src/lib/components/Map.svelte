@@ -16,6 +16,10 @@
 	export let walkingRouteFromStation: string | undefined = undefined;
 	export let originCode: string | undefined = undefined;
 	export let destinationCode: string | undefined = undefined;
+	export let metroRide1Ref: string | undefined = undefined;
+	export let metroRide2Ref: string | undefined = undefined;
+	export let metroRide1Platform: string | undefined = undefined;
+	export let metroRide2Platform: string | undefined = undefined;
 
 	let mapContainer: HTMLDivElement;
 	let map: maplibre.Map | undefined;
@@ -44,7 +48,6 @@
 		if (!map) return null;
 
 		const icon = document.createElement('div');
-		icon.className = 'marker';
 		icon.style.backgroundSize = 'contain';
 		icon.style.cursor = 'pointer';
 		icon.style.backgroundImage = `url(../icons/${iconPath})`;
@@ -465,7 +468,17 @@
 	<div bind:this={mapContainer} class="absolute inset-0 h-full w-full" />
 	{#if map}
 		<div class="pointer-events-none absolute inset-0">
-			<StationFloorPlan {map} {destinationCode} {originCode} {createMarker} bind:exitMarkers />
+			<StationFloorPlan
+				{map}
+				{destinationCode}
+				{originCode}
+				{createMarker}
+				bind:exitMarkers
+				{metroRide1Ref}
+				{metroRide2Ref}
+				{metroRide1Platform}
+				{metroRide2Platform}
+			/>
 		</div>
 	{/if}
 </div>
