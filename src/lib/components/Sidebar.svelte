@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 	import { TextInput, Tag } from 'carbon-components-svelte';
+	import AboutModal from './AboutModal.svelte';
 
 	// Props to match what's in the image
 	export let origin: string;
@@ -58,6 +59,17 @@
 	function goBack() {
 		dispatch('reset');
 		view = 'explore';
+	}
+	
+	// About modal state
+	let isAboutModalOpen = false;
+	
+	function openAboutModal() {
+		isAboutModalOpen = true;
+	}
+	
+	function closeAboutModal() {
+		isAboutModalOpen = false;
 	}
 </script>
 
@@ -288,4 +300,29 @@
 			</div>
 		{/if}
 	</div>
+
+	<footer class="p-4 flex content-start">
+		<button
+		  class="mt-0.5 ml-2 text-xs text-gray-800 underline hover:text-gray-400"
+		  on:click={openAboutModal}
+		>
+		  About
+		</button>
+		<a
+		  class="mt-0.5 ml-2 text-xs text-gray-800 underline hover:text-gray-400 mr-auto"
+		  href="https://github.com/Vonter/bmrcl-station-app"
+		  target="_blank"
+		>
+		  Code
+		</a>
+		<a
+		  href="https://bengawalk.com"
+		  class="mt-0.5 text-xs text-gray-800 underline hover:text-gray-400"
+		  target="_blank"
+		>
+		  bengawalk
+		</a>
+	</footer>
 </div>
+
+<AboutModal isOpen={isAboutModalOpen} on:close={closeAboutModal} />

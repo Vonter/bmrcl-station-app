@@ -13,7 +13,8 @@
 		minZoom?: number,
 		maxZoom?: number,
 		height?: string,
-		width?: string
+		width?: string,
+		anchor?: string
 	) => Marker | null;
 	export let exitMarkers: Marker[] = [];
 	export let metroRide1Ref: string | undefined;
@@ -91,6 +92,22 @@
 
 			// Now we're certain we have data
 			const data = state.exitPointsData!;
+			
+			// Get the current map bounds
+			const bounds = map.getBounds();
+			const mapBoundsNE = bounds.getNorthEast();
+			const mapBoundsSW = bounds.getSouthWest();
+			
+			// Filter features within the current map bounds
+			const featuresInView = data.features.filter(feature => {
+				const [lng, lat] = feature.geometry.coordinates;
+				return (
+					lng >= mapBoundsSW.lng - 0.01 &&
+					lng <= mapBoundsNE.lng + 0.01 &&
+					lat >= mapBoundsSW.lat - 0.01 &&
+					lat <= mapBoundsNE.lat + 0.01
+				);
+			});
 
 			// Clear existing exit markers
 			exitMarkers.forEach((marker) => marker.remove());
@@ -98,7 +115,7 @@
 
 			// Only add elevator markers if the current floor is Ground or Concourse
 			if (currentFloor === 'Ground' || currentFloor === 'Concourse') {
-				data.features.forEach((feature) => {
+				featuresInView.forEach((feature) => {
 					// Process elevator features
 					if (feature.properties?.highway === 'elevator') {
 						const coordinates = feature.geometry.coordinates;
@@ -108,7 +125,8 @@
 							ZOOM_BREAKPOINTS.AREA,
 							undefined,
 							undefined, // No need for custom height for elevators
-							undefined // No need for custom width for elevators
+							undefined, // No need for custom width for elevators
+							undefined  // No need for custom anchor for elevators
 						);
 						if (marker) exitMarkers.push(marker);
 					}
@@ -117,7 +135,7 @@
 
 			// Only add exit markers if the current floor is Ground or Concourse
 			if (currentFloor === 'Ground' || currentFloor === 'Concourse') {
-				data.features.forEach((feature) => {
+				featuresInView.forEach((feature) => {
 					// Process subway entrance features
 					if (feature.properties?.railway === 'subway_entrance' && feature.properties?.ref) {
 						const coordinates = feature.geometry.coordinates;
@@ -140,7 +158,8 @@
 							ZOOM_BREAKPOINTS.AREA,
 							undefined,
 							isJourneyExit ? '36px' : undefined,
-							isJourneyExit ? '36px' : undefined
+							isJourneyExit ? '36px' : undefined,
+							undefined  // No need for custom anchor for exit markers
 						);
 						if (marker) exitMarkers.push(marker);
 					}
@@ -155,7 +174,7 @@
 				currentFloor === 'Purple'
 			) {
 				// Add markers for each point that belongs to origin or destination station
-				data.features.forEach((feature: any) => {
+				featuresInView.forEach((feature: any) => {
 					// Only process platform features
 					if (feature.properties.public_transport === 'platform') {
 						const coordinates = feature.geometry.coordinates;
@@ -183,7 +202,8 @@
 							ZOOM_BREAKPOINTS.AREA,
 							undefined,
 							getMarkerHeight(platformColor, platformCode),
-							getMarkerWidth(platformColor, platformCode)
+							getMarkerWidth(platformColor, platformCode),
+							getMarkerAnchor(platformColor, platformCode)
 						);
 
 						if (marker) exitMarkers.push(marker);
@@ -195,20 +215,8 @@
 		}
 	};
 
-	// Add function to ensure platform layers are always on top
-	function ensurePlatformLayersOnTop() {
-		if (!map) return;
-
-		// Since platforms are now SVG markers, we only need to ensure floor plan layers are handled properly
-		state.currentLayers.forEach((layerId) => {
-			if (map.getLayer(layerId)) {
-				map.moveLayer(layerId);
-			}
-		});
-	}
-
 	// Combined update function for both floor changes and visible stations
-	async function updateStationDisplay(newFloor?: string) {
+	async function updateStationDisplay(newFloor?: string): Promise<void> {
 		const zoom = map.getZoom();
 		const bounds = map.getBounds();
 
@@ -233,8 +241,6 @@
 		if (zoom < ZOOM_BREAKPOINTS.AREA && currentFloor !== 'Concourse') {
 			await clearExistingLayers();
 			currentFloor = 'Concourse';
-			// Load exit markers when floor changes
-			loadAndRenderStationDetails();
 		}
 
 		// Update visible stations with bounds check
@@ -273,7 +279,7 @@
 		state.visibleStations = newVisibleStations;
 
 		// Clear existing layers before loading new floor plans
-		if (newFloor || stationsChanged) {
+		if (newFloor) {
 			await clearExistingLayers();
 		}
 
@@ -285,9 +291,6 @@
 		if (!state.initialized && zoom >= ZOOM_BREAKPOINTS.AREA) {
 			state.initialized = true;
 		}
-
-		// Ensure platform layers are always on top
-		ensurePlatformLayersOnTop();
 	}
 
 	function clearExistingLayers(): Promise<void> {
@@ -365,7 +368,7 @@
 			}
 
 			if (!map.getLayer(layerId)) {
-				// Add the layer and ensure it appears on top by specifying it before all other layers
+				// Add the layer with a low z-index to ensure it appears behind other layers
 				map.addLayer({
 					id: layerId,
 					type: 'raster',
@@ -374,15 +377,8 @@
 						'raster-opacity': 1,
 						'raster-fade-duration': 0
 					}
-				});
-
-				// Move layer to top
-				map.moveLayer(layerId);
-
+				}, map.getStyle().layers[97].id); // Insert behind the the station labels
 				state.currentLayers.push(layerId);
-
-				// Ensure platform layers stay on top even after adding floor plans
-				ensurePlatformLayersOnTop();
 			}
 		} catch (error) {
 			console.error(`Error loading floor plan for ${stationId}-${floor}:`, error);
@@ -407,8 +403,19 @@
 		if (color === 'green' && ref === '3') return '130px';
 		if (color === 'green' && ref === '4') return '147px';
 		if (color === 'purple' && ref === '1') return '195px';
-		if (color === 'purple' && ref === '2') return '155px';
+		if (color === 'purple' && ref === '2') return '146px';
 		return '10px'; // Default width as fallback
+	}
+
+	// Helper function to get marker anchor based on color and reference
+	function getMarkerAnchor(color: string, ref: string): string {
+		if (color === 'green' && ref === '1') return 'top-right';
+		if (color === 'green' && ref === '2') return 'bottom-left';
+		if (color === 'green' && ref === '3') return 'top-right';
+		if (color === 'green' && ref === '4') return 'bottom-left';
+		if (color === 'purple' && ref === '1') return 'bottom-left';
+		if (color === 'purple' && ref === '2') return 'top-right';
+		return 'center'; // Default anchor as fallback
 	}
 
 	// Helper function to fetch PNG URL
@@ -435,14 +442,10 @@
 			if (map) {
 				const zoom = map.getZoom();
 				// If zooming out below AREA threshold, explicitly set floor to Concourse
-				if (zoom < ZOOM_BREAKPOINTS.AREA && currentFloor !== 'Concourse') {
+				if (zoom < ZOOM_BREAKPOINTS.AREA) {
 					updateStationDisplay('Concourse');
 				} else {
 					updateStationDisplay();
-				}
-
-				// Call loadAndRenderStationDetails when zoomed in to or past AREA zoom breakpoint
-				if (zoom >= ZOOM_BREAKPOINTS.AREA) {
 					loadAndRenderStationDetails();
 				}
 			}

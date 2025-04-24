@@ -1,5 +1,6 @@
 export const ZOOM_BREAKPOINTS = {
 	CITY: 10,
+	SUBURB: 12,
 	AREA: 15,
 	STATION: 17
 };

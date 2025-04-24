@@ -1,38 +1,52 @@
-# sv
+# BMRCL Station App
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+An interactive metro map and journey planner that helps you explore the Namma Metro network and plan your journey with ease: https://metro.bengawalk.com
 
-## Creating a project
+Built with SvelteKit, MapLibre and Valhalla. Deployed on Cloudflare Pages.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Development
 
-```bash
-# create a new project in the current directory
-npx sv create
+- Install dependencies with `pnpm install` (or `npm install`)
+- Start local dev server with `pnpm run dev` (or `npm run dev`)
+- Build site deployment assets with `pnpm run build` (or `npm run build`)
 
-# create a new project in my-app
-npx sv create my-app
-```
+### Code Structure
 
-## Developing
+The codebase follows a SvelteKit project structure:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- `src/` - Main source code
+  - `routes/` - SvelteKit route components and API endpoints
+  - `lib/` - Shared libraries and components
+    - `components/` - Reusable Svelte components
+    - `utils/` - Utility functions including journey calculation logic
+    - `config/` - Configuration files and constants
+    - `stores/` - Svelte stores for state management
+    - `types/` - TypeScript type definitions
+  - `app.html` - Main HTML template
+  - `app.css` - Global CSS styles
+- `static/` - Static assets served as-is
+  - `stations/` - Station floor plan SVGs and related assets
+  - `icons/` - UI and station details icons
+  - `*.geojson` - GeoJSON data files for the map and journey planning
 
-```bash
-npm run dev
+### Data
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+The application uses several data sources:
 
-## Building
+- **Metro Network Data**
+  - `bmrcl.geojson` - Contains the Namma Metro network lines and station locations
+  - `points.geojson` - Exit gate points, platform points and other internal station points
+  - `voronoi.geojson` - Voronoi polygons for spatial indexing and nearest-station lookup
 
-To create a production version of your app:
+- **Station Floor Plans**
+  - SVG floor plans for each station stored in `static/stations/`
+  - Each station has multiple floors (Concourse, Platform, etc.)
 
-```bash
-npm run build
-```
+- **Journey Planning**
+  - Uses Valhalla routing engine for walking directions
+  - Custom algorithm for calculating metro journeys including transfers
+  - Journey details include walking time, metro time, platform numbers, and exit information
 
-You can preview the production build with `npm run preview`.
+## AI Declaration
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Components of this repository, including code and documentation, were written with assistance from Claude AI.

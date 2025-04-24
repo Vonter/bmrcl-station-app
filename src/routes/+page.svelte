@@ -10,6 +10,11 @@
 	import type { JourneyDetails as JourneyDetailsType } from '$lib/utils/JourneyCalculator';
 	import { stations } from '$lib/config/stations';
 	import { journeyStore } from '$lib/stores/journey';
+	import { LoadBalancerApplication } from 'carbon-icons-svelte';
+
+	import * as gmapsLoader from '@googlemaps/js-api-loader';
+	const { Loader } = gmapsLoader;
+	let loader: any;
 
 	// Get journey query from URL parameters
 	$: from = '';
@@ -127,17 +132,15 @@
 	}
 
 	onMount(async () => {
-		// Wait for google maps to be loaded
-		await new Promise<void>((resolve) => {
-			const checkGoogle = () => {
-				if (window.google && window.google.maps && window.google.maps.places) {
-					resolve();
-				} else {
-					setTimeout(checkGoogle, 100);
-				}
-			};
-			checkGoogle();
-		});
+		// Load Google Maps API dynamically
+		if (browser) {
+			loader = new Loader({
+				apiKey: import.meta.env.VITE_GMAPS_API_KEY,
+				version: 'weekly',
+				libraries: ['places']
+			});
+			await loader.load();
+		}
 
 		const bounds = new window.google.maps.LatLngBounds(
 			new window.google.maps.LatLng(12, 76), // SW corner

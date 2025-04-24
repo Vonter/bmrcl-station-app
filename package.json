@@ -37,7 +37,9 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"@googlemaps/js-api-loader": "^1.16.8",
 		"@mapbox/polyline": "^1.2.1",
+		"@types/gtag.js": "^0.0.20",
 		"carbon-components": "^10.58.15",
 		"carbon-components-svelte": "^0.88.4",
 		"carbon-icons-svelte": "^13.3.0",

@@ -43,7 +43,8 @@
 		minZoom?: number,
 		maxZoom?: number,
 		height?: string,
-		width?: string
+		width?: string,
+		anchor?: string
 	) => {
 		if (!map) return null;
 
@@ -54,7 +55,10 @@
 		icon.style.height = height || '24px';
 		icon.style.width = width || '24px';
 
-		const marker = new maplibre.Marker({ element: icon }).setLngLat(coordinates).addTo(map);
+		const marker = new maplibre.Marker({ 
+			element: icon,
+			anchor: anchor as any || 'center'
+		}).setLngLat(coordinates).addTo(map);
 
 		// Set initial visibility based on current zoom
 		if (minZoom !== undefined || maxZoom !== undefined) {
@@ -95,7 +99,7 @@
 		});
 	};
 
-	// Add station name labels to the map using symbol layers
+	// Update station name labels to the map using symbol layers
 	const updateStationLabels = () => {
 		if (!map) return;
 
@@ -104,83 +108,146 @@
 			setTimeout(updateStationLabels, 100);
 			return;
 		}
-
-		// Remove existing label sources and layers if they exist
-		if (map.getLayer('station-labels')) {
-			map.removeLayer('station-labels');
-		}
-		if (map.getSource('station-labels-source')) {
-			map.removeSource('station-labels-source');
-		}
-
-		const originStation = stations.find((s) => s.code === originCode);
-		const destinationStation = stations.find((s) => s.code === destinationCode);
-
-		// Only proceed if we have stations to label
-		if (!originStation && !destinationStation) return;
-
-		// Create features for station labels
-		const features: GeoJSON.Feature<GeoJSON.Point>[] = [];
-
-		if (originStation) {
-			features.push({
-				type: 'Feature',
-				properties: {
-					name: originStation.name
-				},
-				geometry: {
-					type: 'Point',
-					coordinates: originStation.coordinates
+		
+		// If source doesn't exist, generate all features once
+		if (!map.getSource('station-labels-source')) {
+			// Create features for all stations with visibility properties
+			let features: GeoJSON.Feature<GeoJSON.Point>[] = [];
+			
+			// First deduplicate stations by code
+			const uniqueStations = Array.from(
+				new Map(stations.map(station => [station.code, station])).values()
+			);
+			
+			// Add all stations with their visibility properties
+			uniqueStations.forEach(station => {
+				const isTerminal = ['BIET', 'CLGD', 'APTS', 'WHTM'].includes(station.code);
+				
+				features.push({
+					type: 'Feature',
+					properties: {
+						name: station.name,
+						code: station.code,
+						// Define at which zoom levels this station should be visible
+						showAtCityLevel: isTerminal, // Show terminals at city level
+						showAtSuburbLevel: features.length % 2 === 0, // Show every other station at suburb level
+						showAtAreaLevel: true, // Show all stations at area level
+						isOriginOrDestination: false // Will be updated dynamically
+					},
+					geometry: {
+						type: 'Point',
+						coordinates: station.coordinates
+					}
+				});
+			});
+			
+			// Add source for station labels
+			map.addSource('station-labels-source', {
+				type: 'geojson',
+				data: {
+					type: 'FeatureCollection',
+					features
 				}
 			});
 		}
-
-		if (destinationStation && destinationStation.code !== originStation?.code) {
-			features.push({
-				type: 'Feature',
-				properties: {
-					name: destinationStation.name
-				},
-				geometry: {
-					type: 'Point',
-					coordinates: destinationStation.coordinates
+		
+		// Update origin/destination status for all features
+		const source = map.getSource('station-labels-source') as maplibre.GeoJSONSource;
+		const data = source.serialize().data as GeoJSON.FeatureCollection;
+		if (data && data.features) {
+			// Reset all isOriginOrDestination flags
+			data.features.forEach(feature => {
+				if (feature.properties) {
+					feature.properties.isOriginOrDestination = 
+						(originCode && feature.properties.code === originCode) || 
+						(destinationCode && feature.properties.code === destinationCode);
 				}
+			});
+			
+			// Update the source data
+			source.setData(data);
+		}
+
+		// Add symbol layer for station labels with filters based on zoom and properties
+		if (!map.getLayer('station-labels')) {
+			// If layer doesn't exist, create it
+			map.addLayer({
+				id: 'station-labels',
+				type: 'symbol',
+				source: 'station-labels-source',
+				layout: {
+					'text-field': ['get', 'name'],
+					'text-size': 14,
+					'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+					'text-radial-offset': 0.8,
+					'text-justify': 'auto',
+					'text-allow-overlap': true,
+					'text-ignore-placement': false,
+					visibility: 'visible',
+					'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
+				},
+				paint: {
+					'text-color': '#333',
+					'text-halo-color': '#fff',
+					'text-halo-width': 2,
+					'text-halo-blur': 0.5
+				},
+				filter: ['any', 
+					['==', ['get', 'isOriginOrDestination'], true],
+					['==', ['get', 'showAtCityLevel'], true]
+				] // Default filter - only show city level stations
 			});
 		}
 
-		// Add source for station labels
-		map.addSource('station-labels-source', {
-			type: 'geojson',
-			data: {
-				type: 'FeatureCollection',
-				features
-			}
-		});
+		// Ensure station labels are on top
+		moveLayerToTop('station-labels');
+	};
 
-		// Add symbol layer for station labels
-		map.addLayer({
-			id: 'station-labels',
-			type: 'symbol',
-			source: 'station-labels-source',
-			layout: {
-				'text-field': ['get', 'name'],
-				'text-size': 14,
-				'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
-				'text-radial-offset': 0.8,
-				'text-justify': 'auto',
-				'text-allow-overlap': true,
-				'text-ignore-placement': false,
-				visibility: 'visible',
-				'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
-			},
-			paint: {
-				'text-color': '#333',
-				'text-halo-color': '#fff',
-				'text-halo-width': 2,
-				'text-halo-blur': 0.5
-			},
-			minzoom: ZOOM_BREAKPOINTS.CITY
-		});
+	// Update filter for station labels based on current zoom level
+	const updateStationLabelFilter = () => {
+		if (!map || !map.getLayer('station-labels')) return;
+
+		const currentZoom = map.getZoom();
+		
+		// Define filter based on zoom level and origin/destination status
+		if (originCode || destinationCode) {
+			// Show only origin/destination stations
+			map.setFilter('station-labels', ['==', ['get', 'isOriginOrDestination'], true]);
+		} else if (currentZoom >= ZOOM_BREAKPOINTS.AREA) {
+			// Show all stations at high zoom levels
+			map.setFilter('station-labels', ['any', 
+				['==', ['get', 'showAtAreaLevel'], true],
+				['==', ['get', 'isOriginOrDestination'], true]
+			]);
+		} else if (currentZoom >= ZOOM_BREAKPOINTS.SUBURB && currentZoom < ZOOM_BREAKPOINTS.AREA) {
+			// Show suburb level stations
+			map.setFilter('station-labels', ['any', 
+				['==', ['get', 'showAtSuburbLevel'], true],
+				['==', ['get', 'isOriginOrDestination'], true]
+			]);
+		} else if (currentZoom >= ZOOM_BREAKPOINTS.CITY && currentZoom < ZOOM_BREAKPOINTS.SUBURB) {
+			// Show only city level stations
+			map.setFilter('station-labels', ['any',
+				['==', ['get', 'showAtCityLevel'], true],
+				['==', ['get', 'isOriginOrDestination'], true]
+			]);
+		} else if (currentZoom < ZOOM_BREAKPOINTS.CITY) {
+			// Hide all stations
+			map.setFilter('station-labels', ['==', false, true]);
+		}
+		
+		// Ensure station labels remain on top after filter updates
+		moveLayerToTop('station-labels');
+	};
+
+	// Helper function to move a layer to the top
+	const moveLayerToTop = (layerId: string) => {
+		if (!map || !map.getLayer(layerId)) return;
+		try {
+			map.moveLayer(layerId);
+		} catch (error) {
+			console.error(`Error moving layer ${layerId} to top:`, error);
+		}
 	};
 
 	// Clear existing markers and add new ones for origin and destination
@@ -244,6 +311,8 @@
 
 		// Update station labels after markers are set
 		updateStationLabels();
+		// Make sure station labels are above other layers
+		moveLayerToTop('station-labels');
 	};
 
 	// Add or update walking route layers
@@ -377,6 +446,9 @@
 
 		// Re-render base map with all stations and lines
 		renderAllStationsAndLines(map);
+		
+		// Re-add and update station labels
+		updateStationLabels();
 	};
 
 	// Initialize the map
@@ -388,10 +460,14 @@
 			zoom: BENGALURU_CENTER.zoom
 		});
 
+		// Add compass (navigation control) in the bottom right
+		map.addControl(new maplibre.NavigationControl(), 'bottom-right');
+
 		// Add zoom change listener
 		map.on('zoom', () => {
 			if (map) {
 				updateMarkerVisibility();
+				updateStationLabelFilter();
 			}
 		});
 
@@ -405,6 +481,9 @@
 
 					// Render all stations and lines by default
 					renderAllStationsAndLines(map);
+					
+					// Initialize station labels
+					updateStationLabels();
 
 					// Then handle any active journey if needed
 					updateMarkers();
@@ -437,11 +516,15 @@
 		updateMarkers();
 		if (origin && destination) {
 			highlightRelevantSegments(map, origin, destination);
+			// Ensure station labels stay on top after adding route highlights
+			moveLayerToTop('station-labels');
 		}
 	}
 
 	$: if (map && (walkingRouteToStation || walkingRouteFromStation)) {
 		updateWalkingRoutes();
+		// Ensure station labels stay on top after adding walking routes
+		moveLayerToTop('station-labels');
 	} else if (map && walkingRouteToStation === undefined && walkingRouteFromStation === undefined) {
 		resetMapJourney();
 	}
@@ -461,6 +544,11 @@
 			};
 			checkAndUpdate();
 		}
+	}
+
+	// Move station labels to top whenever exitMarkers change (station plan rendering)
+	$: if (map && exitMarkers.length) {
+		moveLayerToTop('station-labels');
 	}
 </script>
 
