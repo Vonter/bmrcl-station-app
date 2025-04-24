@@ -4,6 +4,7 @@
 	export let description = 'Explore the Namma Metro map and plan your journey with ease.';
 	export let keywords = 'blr,bangalore,bengaluru,metro,bmrcl,namma metro,map,journey,planner';
 	export let author = 'Bengawalk';
+	export let image = 'https://metro.bengawalk.com/sharecard.jpg';
 	export let url = 'https://metro.bengawalk.com';
 	export let type = 'website';
 </script>
@@ -27,6 +28,7 @@
 	<meta property="og:title" content={title} />
 	<meta property="og:site_name" content={title} />
 	<meta property="og:description" content={description} />
+	<meta property="og:image" content={image} />
 	<meta property="og:url" content={url} />
 	<meta property="og:type" content={type} />
 
@@ -34,6 +36,7 @@
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content={image} />
 
 	<!-- Additional Meta Tags -->
 	<meta name="language" content="English" />

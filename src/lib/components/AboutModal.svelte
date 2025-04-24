@@ -28,6 +28,8 @@
   <div 
     class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4"
     on:click={handleOutsideClick}
+    on:keydown={handleEscape}
+    role="presentation"
   >
     <div 
       class="max-h-[90vh] w-full max-w-md overflow-y-auto rounded-lg bg-white p-6 shadow-xl"
@@ -54,7 +56,11 @@
         </p>
         
         <p>
-          Data sourced from on-ground surveys and community contributions. In case of any errors, please send a message to <a href="mailto:hello@bengawalk.com" class="text-blue-600 hover:underline" target="_blank">hello@bengawalk.com</a>.
+          Vivek Matthew, Shamya Benehalli, Stuti Mehta, Puneet Sachdev, and Pravar Chaudhary helped build this.
+        </p>
+
+        <p>
+          All the data is open source and the repository with code and data can be found <a href="https://github.com/Vonter/bmrcl-station-app" class="text-blue-600 hover:underline" target="_blank">here</a>. You may report bugs and send suggestions to <a href="mailto:hello@bengawalk.com" class="text-blue-600 hover:underline" target="_blank">hello@bengawalk.com</a>.
         </p>
         
         <p class="pt-2 text-sm text-gray-600">
