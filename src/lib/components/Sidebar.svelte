@@ -60,14 +60,14 @@
 		dispatch('reset');
 		view = 'explore';
 	}
-	
+
 	// About modal state
 	let isAboutModalOpen = false;
-	
+
 	function openAboutModal() {
 		isAboutModalOpen = true;
 	}
-	
+
 	function closeAboutModal() {
 		isAboutModalOpen = false;
 	}
@@ -301,26 +301,26 @@
 		{/if}
 	</div>
 
-	<footer class="p-4 flex content-start">
+	<footer class="flex content-start p-4">
 		<button
-		  class="mt-0.5 ml-2 text-xs text-gray-800 underline hover:text-gray-400"
-		  on:click={openAboutModal}
+			class="ml-2 mt-0.5 text-xs text-gray-800 underline hover:text-gray-400"
+			on:click={openAboutModal}
 		>
-		  About
+			About
 		</button>
 		<a
-		  class="mt-0.5 ml-2 text-xs text-gray-800 underline hover:text-gray-400 mr-auto"
-		  href="https://github.com/Vonter/bmrcl-station-app"
-		  target="_blank"
+			class="ml-2 mr-auto mt-0.5 text-xs text-gray-800 underline hover:text-gray-400"
+			href="https://github.com/Vonter/bmrcl-station-app"
+			target="_blank"
 		>
-		  Code
+			Code
 		</a>
 		<a
-		  href="https://bengawalk.com"
-		  class="mt-0.5 text-xs text-gray-800 underline hover:text-gray-400"
-		  target="_blank"
+			href="https://bengawalk.com"
+			class="mt-0.5 text-xs text-gray-800 underline hover:text-gray-400"
+			target="_blank"
 		>
-		  bengawalk
+			bengawalk
 		</a>
 	</footer>
 </div>

@@ -55,10 +55,12 @@
 		icon.style.height = height || '24px';
 		icon.style.width = width || '24px';
 
-		const marker = new maplibre.Marker({ 
+		const marker = new maplibre.Marker({
 			element: icon,
-			anchor: anchor as any || 'center'
-		}).setLngLat(coordinates).addTo(map);
+			anchor: (anchor as any) || 'center'
+		})
+			.setLngLat(coordinates)
+			.addTo(map);
 
 		// Set initial visibility based on current zoom
 		if (minZoom !== undefined || maxZoom !== undefined) {
@@ -108,21 +110,21 @@
 			setTimeout(updateStationLabels, 100);
 			return;
 		}
-		
+
 		// If source doesn't exist, generate all features once
 		if (!map.getSource('station-labels-source')) {
 			// Create features for all stations with visibility properties
 			let features: GeoJSON.Feature<GeoJSON.Point>[] = [];
-			
+
 			// First deduplicate stations by code
 			const uniqueStations = Array.from(
-				new Map(stations.map(station => [station.code, station])).values()
+				new Map(stations.map((station) => [station.code, station])).values()
 			);
-			
+
 			// Add all stations with their visibility properties
-			uniqueStations.forEach(station => {
+			uniqueStations.forEach((station) => {
 				const isTerminal = ['BIET', 'CLGD', 'APTS', 'WHTM'].includes(station.code);
-				
+
 				features.push({
 					type: 'Feature',
 					properties: {
@@ -140,7 +142,7 @@
 					}
 				});
 			});
-			
+
 			// Add source for station labels
 			map.addSource('station-labels-source', {
 				type: 'geojson',
@@ -150,20 +152,20 @@
 				}
 			});
 		}
-		
+
 		// Update origin/destination status for all features
 		const source = map.getSource('station-labels-source') as maplibre.GeoJSONSource;
 		const data = source.serialize().data as GeoJSON.FeatureCollection;
 		if (data && data.features) {
 			// Reset all isOriginOrDestination flags
-			data.features.forEach(feature => {
+			data.features.forEach((feature) => {
 				if (feature.properties) {
-					feature.properties.isOriginOrDestination = 
-						(originCode && feature.properties.code === originCode) || 
+					feature.properties.isOriginOrDestination =
+						(originCode && feature.properties.code === originCode) ||
 						(destinationCode && feature.properties.code === destinationCode);
 				}
 			});
-			
+
 			// Update the source data
 			source.setData(data);
 		}
@@ -192,7 +194,8 @@
 					'text-halo-width': 2,
 					'text-halo-blur': 0.5
 				},
-				filter: ['any', 
+				filter: [
+					'any',
 					['==', ['get', 'isOriginOrDestination'], true],
 					['==', ['get', 'showAtCityLevel'], true]
 				] // Default filter - only show city level stations
@@ -208,26 +211,29 @@
 		if (!map || !map.getLayer('station-labels')) return;
 
 		const currentZoom = map.getZoom();
-		
+
 		// Define filter based on zoom level and origin/destination status
 		if (originCode || destinationCode) {
 			// Show only origin/destination stations
 			map.setFilter('station-labels', ['==', ['get', 'isOriginOrDestination'], true]);
 		} else if (currentZoom >= ZOOM_BREAKPOINTS.AREA) {
 			// Show all stations at high zoom levels
-			map.setFilter('station-labels', ['any', 
+			map.setFilter('station-labels', [
+				'any',
 				['==', ['get', 'showAtAreaLevel'], true],
 				['==', ['get', 'isOriginOrDestination'], true]
 			]);
 		} else if (currentZoom >= ZOOM_BREAKPOINTS.SUBURB && currentZoom < ZOOM_BREAKPOINTS.AREA) {
 			// Show suburb level stations
-			map.setFilter('station-labels', ['any', 
+			map.setFilter('station-labels', [
+				'any',
 				['==', ['get', 'showAtSuburbLevel'], true],
 				['==', ['get', 'isOriginOrDestination'], true]
 			]);
 		} else if (currentZoom >= ZOOM_BREAKPOINTS.CITY && currentZoom < ZOOM_BREAKPOINTS.SUBURB) {
 			// Show only city level stations
-			map.setFilter('station-labels', ['any',
+			map.setFilter('station-labels', [
+				'any',
 				['==', ['get', 'showAtCityLevel'], true],
 				['==', ['get', 'isOriginOrDestination'], true]
 			]);
@@ -235,7 +241,7 @@
 			// Hide all stations
 			map.setFilter('station-labels', ['==', false, true]);
 		}
-		
+
 		// Ensure station labels remain on top after filter updates
 		moveLayerToTop('station-labels');
 	};
@@ -446,7 +452,7 @@
 
 		// Re-render base map with all stations and lines
 		renderAllStationsAndLines(map);
-		
+
 		// Re-add and update station labels
 		updateStationLabels();
 	};
@@ -481,7 +487,7 @@
 
 					// Render all stations and lines by default
 					renderAllStationsAndLines(map);
-					
+
 					// Initialize station labels
 					updateStationLabels();
 

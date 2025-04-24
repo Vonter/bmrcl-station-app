@@ -92,14 +92,14 @@
 
 			// Now we're certain we have data
 			const data = state.exitPointsData!;
-			
+
 			// Get the current map bounds
 			const bounds = map.getBounds();
 			const mapBoundsNE = bounds.getNorthEast();
 			const mapBoundsSW = bounds.getSouthWest();
-			
+
 			// Filter features within the current map bounds
-			const featuresInView = data.features.filter(feature => {
+			const featuresInView = data.features.filter((feature) => {
 				const [lng, lat] = feature.geometry.coordinates;
 				return (
 					lng >= mapBoundsSW.lng - 0.01 &&
@@ -126,7 +126,7 @@
 							undefined,
 							undefined, // No need for custom height for elevators
 							undefined, // No need for custom width for elevators
-							undefined  // No need for custom anchor for elevators
+							undefined // No need for custom anchor for elevators
 						);
 						if (marker) exitMarkers.push(marker);
 					}
@@ -159,7 +159,7 @@
 							undefined,
 							isJourneyExit ? '36px' : undefined,
 							isJourneyExit ? '36px' : undefined,
-							undefined  // No need for custom anchor for exit markers
+							undefined // No need for custom anchor for exit markers
 						);
 						if (marker) exitMarkers.push(marker);
 					}
@@ -369,15 +369,18 @@
 
 			if (!map.getLayer(layerId)) {
 				// Add the layer with a low z-index to ensure it appears behind other layers
-				map.addLayer({
-					id: layerId,
-					type: 'raster',
-					source: sourceId,
-					paint: {
-						'raster-opacity': 1,
-						'raster-fade-duration': 0
-					}
-				}, map.getStyle().layers[97].id); // Insert behind the the station labels
+				map.addLayer(
+					{
+						id: layerId,
+						type: 'raster',
+						source: sourceId,
+						paint: {
+							'raster-opacity': 1,
+							'raster-fade-duration': 0
+						}
+					},
+					map.getStyle().layers[97].id
+				); // Insert behind the the station labels
 				state.currentLayers.push(layerId);
 			}
 		} catch (error) {
